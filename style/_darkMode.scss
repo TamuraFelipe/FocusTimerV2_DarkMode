@@ -1,0 +1,47 @@
+body.dark {
+    background-color: #000;
+    .dark {
+        display: block;
+    }
+    .light {
+        display: none;
+    }
+    .timer-display {
+        color: #fff;
+    }
+    .timer-controls-play svg path,
+    .timer-controls-stop svg path,
+    .timer-controls-plus svg path,
+    .timer-controls-minus svg path {
+        fill: #fff;
+    }
+    .sounds {
+        &-three,
+        &-rain,
+        &-coffeeShop,
+        &-firePlace {
+            background-color: #29292E;
+            svg path {
+                fill: #C4C4CC;
+            }
+        }
+    }
+    .focus {
+        
+            background-color: #0A3442;
+            svg path {
+                fill: #fff;
+            }
+        }
+}
+.header {
+    max-width: 102.4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3rem 3rem 0 0;
+    margin: 0 auto;
+    .dark {
+        display: none;
+    }
+}

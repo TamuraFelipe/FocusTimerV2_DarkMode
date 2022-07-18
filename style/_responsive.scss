@@ -1,6 +1,9 @@
 @media (min-width: 375px) {
     .body {
         font-size: 12.6rem;
+        .header {
+            padding: 3rem 3rem 0 0;
+        }
     }
     .sounds{
         &-three,
@@ -13,6 +16,9 @@
     }
 }
 @media (min-width: 1024px) {
+    .header {
+        padding: 6rem 6rem 0 0;
+    }
     .main {
         grid-template-columns: 1fr 1fr;
     }

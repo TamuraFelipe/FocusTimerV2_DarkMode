@@ -1,0 +1,22 @@
+#volume {
+    width: 70%;
+    &::-webkit-slider-thumb {
+        appearance: none;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 50%;
+        background-color: #fff;
+        cursor: pointer;
+    }
+}
+input[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 18em;
+    height: 0.5em;
+    left: 4em;
+    border-radius: 5px;
+    background-color: #fff;
+    outline: none;
+}

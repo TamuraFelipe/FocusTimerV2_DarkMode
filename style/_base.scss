@@ -21,6 +21,10 @@
     text-transform: uppercase;
     background-color: var(--bg-body);
     color: var(--fc--timer);
+    transition: background 300ms;
+}
+.header {
+    height: 7.5rem;
 }
 .main {
     max-width: 102.4rem;
@@ -29,4 +33,11 @@
     align-items: center;
     height: 100vh;
     padding: 0 2rem;
+}
+button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
 }

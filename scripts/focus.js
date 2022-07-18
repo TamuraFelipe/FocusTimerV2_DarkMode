@@ -15,11 +15,11 @@ export default function Focus() {
   function removeFocus() {
     let focusIn = document.querySelector(".focus");
     focusIn.classList.remove("focus");
-    console.log(focusIn);
+    //console.log(focusIn);
   }
 
   return {
     removeFocus,
-    removeFocus,
+    
   }
 }

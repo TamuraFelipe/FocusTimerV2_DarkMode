@@ -1,3 +1,4 @@
+import Volume from './volume.js';
 export default function Sounds() {
   const press = new Audio(
     "https://github.com/maykbrito/automatic-video-creator/blob/master/audios/button-press.wav?raw=true"
@@ -11,6 +12,13 @@ export default function Sounds() {
   const coffeeShop = new Audio("./sounds/Cafeteria.wav");
   const firePlace = new Audio("./sounds/Lareira.wav");
 
+  const volume = Volume({
+    florest,
+    rain,
+    coffeeShop,
+    firePlace,
+  });
+
   function kitchenFinished() {
     kitchenTimer.play();
   }
@@ -21,6 +29,7 @@ export default function Sounds() {
   function playFlorest() {
     soundPressButton();
     florest.play();
+    volume.setVolFlorest();
     rain.pause();
     coffeeShop.pause();
     firePlace.pause();
@@ -28,6 +37,7 @@ export default function Sounds() {
   function playRain() {
     soundPressButton();
     rain.play();
+    volume.setVolRain();
     florest.pause();
     coffeeShop.pause();
     firePlace.pause();
@@ -35,6 +45,7 @@ export default function Sounds() {
   function playCoffeeShop() {
     soundPressButton();
     coffeeShop.play();
+    volume.setVolCoffeShop();
     florest.pause();
     rain.pause();
     firePlace.pause();
@@ -42,11 +53,14 @@ export default function Sounds() {
   function playFirePlace() {
     soundPressButton();
     firePlace.play();
+    volume.setVolFirePlace();
     florest.pause();
     rain.pause();
     coffeeShop.pause();
   }
   
+  
+
   return {
     playFlorest,
     playRain,

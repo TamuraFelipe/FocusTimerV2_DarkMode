@@ -10,6 +10,10 @@ const btnRain = document.querySelector(".sounds-rain");
 const btnCoffeeShop = document.querySelector(".sounds-coffeeShop");
 const btnFirePlace = document.querySelector(".sounds-firePlace");
 
+const btnLightMode = document.querySelector('.light');
+const btnDarkMode = document.querySelector('.dark');
+const body = document.querySelector('.body');
+
 export {
     buttonPlay,
     buttonStop,
@@ -22,4 +26,8 @@ export {
     btnRain,
     btnCoffeeShop,
     btnFirePlace,
+
+    btnLightMode,
+    btnDarkMode,
+    body,
 }
